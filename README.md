@@ -43,7 +43,17 @@ To run the tests, check your test coverage, and generate an HTML coverage report
 
 ### Live reloading and Sass CSS compilation
 
-Moved to [Live reloading and SASS compilation](https://cookiecutter-django.readthedocs.io/en/latest/developing-locally.html#sass-compilation-live-reloading).
+Moved to [Live reloading and SASS compilation]
+
+Run the following command to develop/style components with live reload
+
+```bash
+
+python manage.py tailwind start
+
+# start the django server in a different shell
+python manage.py runserver
+```
 
 ### Celery
 

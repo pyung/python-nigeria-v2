@@ -1,3 +1,7 @@
 {% extends "base.html" %}
 
-
+{% block content %}
+<c-card title="Hello" url="{% url 'home' %}">
+    This is a sample card
+</c-card>
+{% endblock content %}

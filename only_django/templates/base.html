@@ -1,5 +1,5 @@
 
-{% load static i18n %}<!DOCTYPE html>
+{% load static i18n tailwind_tags %}<!DOCTYPE html>
 {% get_current_language as LANGUAGE_CODE %}
 <html lang="{{ LANGUAGE_CODE }}">
   <head>
@@ -16,6 +16,7 @@
   <meta name="author"
         content="Biola" />
   <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
+  {% tailwind_css %}
   {% block css %}
     <!-- Latest compiled and minified Bootstrap CSS -->
     <link rel="stylesheet"

@@ -34,6 +34,8 @@ services:
       - only_django_local_postgres_data_backups:/backups
     env_file:
       - ./.envs/.local/.postgres
+    ports:
+      - "5437:5432"
 
   mailpit:
     image: docker.io/axllent/mailpit:latest
@@ -47,6 +49,8 @@ services:
     
     volumes:
       - only_django_local_redis_data:/data
+    ports:
+      - "6379:6379"
     
 
   celeryworker:
